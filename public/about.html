@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我们 - 龙虾技能库</title>
+  <meta name="description" content="了解龙虾技能库的使命、团队和联系方式。我们致力于聚合全球最好的AI Agent技能。">
+  <link rel="canonical" href="https://lobsterskills.com/about">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .about-hero {
+      background: var(--gradient-primary);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .about-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .about-hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .about-section {
+      padding: 60px 0;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .about-card {
+      text-align: center;
+      padding: 30px;
+    }
+    .about-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .about-card h3 {
+      margin-bottom: 15px;
+    }
+    .about-card p {
+      color: var(--gray);
+    }
+    .stats-section {
+      background: var(--light);
+      padding: 60px 0;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      text-align: center;
+    }
+    .stat-box {
+      padding: 30px;
+    }
+    .stat-box .number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      display: block;
+    }
+    .stat-box .label {
+      color: var(--gray);
+      margin-top: 10px;
+    }
+    .contact-section {
+      padding: 60px 0;
+      text-align: center;
+    }
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 30px;
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    .contact-link:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+    @media (max-width: 768px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .contact-links {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="logo">
+          <span class="logo-icon">🦞</span>
+          <span class="logo-text">龙虾技能库</span>
+        </a>
+        <nav class="main-nav">
+          <a href="/" class="nav-link">首页</a>
+          <a href="/skills" class="nav-link">技能库</a>
+          <a href="/categories" class="nav-link">分类</a>
+          <a href="/platforms" class="nav-link">平台</a>
+          <a href="/about" class="nav-link active">关于</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="about-hero">
+    <div class="container">
+      <h1>关于龙虾技能库</h1>
+      <p>我们致力于聚合全球最好的AI Agent技能，让每个人都能找到合适的AI工具，提升工作效率。</p>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="about-section">
+    <div class="container">
+      <h2 class="section-title">我们的使命</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">🔍</div>
+          <h3>发现</h3>
+          <p>从全球8大平台发现和收集优质的AI Agent技能，让用户一站式找到所需工具。</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">📊</div>
+          <h3>评估</h3>
+          <p>提供客观的评分和评价体系，帮助用户快速识别高质量技能，降低选择成本。</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">🔗</div>
+          <h3>连接</h3>
+          <p>连接技能开发者和使用者，构建AI Agent技能生态系统，推动行业发展。</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">🛡️</div>
+          <h3>安全</h3>
+          <p>明确标注技能来源和安全状态，提醒用户注意风险，保障使用安全。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-box">
+          <span class="number">1,247</span>
+          <div class="label">技能总数</div>
+        </div>
+        <div class="stat-box">
+          <span class="number">8</span>
+          <div class="label">来源平台</div>
+        </div>
+        <div class="stat-box">
+          <span class="number">42</span>
+          <div class="label">分类</div>
+        </div>
+        <div class="stat-box">
+          <span class="number">50K+</span>
+          <div class="label">月访问量</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Supported Platforms -->
+  <section class="about-section">
+    <div class="container">
+      <h2 class="section-title">支持的平台</h2>
+      <p style="text-align: center; color: var(--gray); margin-bottom: 40px;">
+        我们聚合来自以下平台的AI Agent技能
+      </p>
+      <div class="platforms-grid" id="platformsGrid">
+        <!-- 动态生成 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section">
+    <div class="container">
+      <h2 class="section-title">联系我们</h2>
+      <p style="color: var(--gray);">有任何问题或建议？欢迎与我们联系</p>
+      <div class="contact-links">
+        <a href="https://github.com/lobsterskills" class="contact-link" target="_blank">
+          <span>🐙</span>
+          <span>GitHub</span>
+        </a>
+        <a href="https://twitter.com/lobsterskills" class="contact-link" target="_blank">
+          <span>🐦</span>
+          <span>Twitter</span>
+        </a>
+        <a href="mailto:contact@lobsterskills.com" class="contact-link">
+          <span>📧</span>
+          <span>Email</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">🦞</span>
+            <span class="logo-text">龙虾技能库</span>
+          </div>
+          <p class="footer-desc">全球最大的AI Agent技能聚合平台</p>
+        </div>
+        <div class="footer-links">
+          <h4>导航</h4>
+          <a href="/">首页</a>
+          <a href="/skills">技能库</a>
+          <a href="/categories">分类</a>
+        </div>
+        <div class="footer-links">
+          <h4>关于</h4>
+          <a href="/about">关于我们</a>
+          <a href="/privacy">隐私政策</a>
+          <a href="/terms">服务条款</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 龙虾技能库. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      UIRenderer.renderPlatforms();
+    });
+  </script>
+</body>
+</html>

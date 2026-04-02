@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>龙虾技能库 - 全球最大的AI Agent技能聚合平台</title>
+  <meta name="description" content="聚合OpenClaw、GitHub、扣子Coze等平台的AI Agent技能，提供安全验证、分类检索、一键安装服务。发现、分享、使用最好的AI技能。">
+  <meta name="keywords" content="AI技能,Agent技能,OpenClaw,扣子Coze,GitHub Skills,AI工具,自动化技能,AI Agent">
+  <meta name="author" content="Lobster Skills Hub">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="龙虾技能库 - 全球最大的AI Agent技能聚合平台">
+  <meta property="og:description" content="聚合OpenClaw、GitHub、扣子Coze等平台的AI Agent技能">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lobsterskills.com">
+  <meta property="og:image" content="https://lobsterskills.com/og-image.jpg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="龙虾技能库 - AI Agent技能聚合平台">
+  <meta name="twitter:description" content="发现、分享、使用最好的AI技能">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://lobsterskills.com">
+  
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "龙虾技能库",
+    "url": "https://lobsterskills.com",
+    "description": "全球最大的AI Agent技能聚合平台",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://lobsterskills.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  
+  <!-- Monetag Ads (预留位置) -->
+  <!-- 审核通过后插入广告代码 -->
+</head>
+<body>
+  <!-- 顶部广告位 -->
+  <div class="ad-container top-ad" id="ad-top">
+    <div class="ad-placeholder">
+      <span>📢 广告位 - 728x90</span>
+    </div>
+  </div>
+
+  <!-- 导航栏 -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="logo">
+          <span class="logo-icon">🦞</span>
+          <span class="logo-text">龙虾技能库</span>
+        </a>
+        
+        <nav class="main-nav">
+          <a href="/" class="nav-link active">首页</a>
+          <a href="/skills" class="nav-link">技能库</a>
+          <a href="/categories" class="nav-link">分类</a>
+          <a href="/platforms" class="nav-link">平台</a>
+          <a href="/submit" class="nav-link">提交技能</a>
+        </nav>
+        
+        <div class="header-actions">
+          <div class="search-box">
+            <input type="text" placeholder="搜索技能..." id="searchInput">
+            <button class="search-btn">🔍</button>
+          </div>
+          <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 安全警告横幅 -->
+  <div class="security-banner">
+    <div class="container">
+      <div class="security-content">
+        <span class="security-icon">⚠️</span>
+        <p><strong>安全提示：</strong>本站聚合的技能来自第三方平台，未经过独立安全验证。使用前请自行评估风险，建议在隔离环境中测试。</p>
+        <button class="security-close" onclick="this.parentElement.parentElement.remove()">✕</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 英雄区 -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          发现最好的<br>
+          <span class="gradient-text">AI Agent 技能</span>
+        </h1>
+        <p class="hero-desc">
+          聚合 OpenClaw、GitHub、扣子Coze 等平台的 <strong>1000+</strong> 个AI技能<br>
+          一键发现、分类检索、快速安装
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" id="totalSkills">1,247</span>
+            <span class="stat-label">技能总数</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">8</span>
+            <span class="stat-label">来源平台</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">42</span>
+            <span class="stat-label">分类</span>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="/skills" class="btn btn-primary">浏览技能库</a>
+          <a href="/categories" class="btn btn-secondary">查看分类</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
+
+  <!-- 侧边栏广告位 -->
+  <div class="ad-container sidebar-ad" id="ad-sidebar">
+    <div class="ad-placeholder">
+      <span>📢 侧边栏广告 - 300x250</span>
+    </div>
+  </div>
+
+  <!-- 分类导航 -->
+  <section class="categories-section">
+    <div class="container">
+      <h2 class="section-title">技能分类</h2>
+      <div class="categories-grid" id="categoriesGrid">
+        <!-- 动态生成 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 内容区广告 -->
+  <div class="ad-container content-ad" id="ad-content-1">
+    <div class="ad-placeholder">
+      <span>📢 内容区广告 - 728x90</span>
+    </div>
+  </div>
+
+  <!-- 热门技能 -->
+  <section class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">热门技能</h2>
+        <a href="/skills?sort=popular" class="view-all">查看全部 →</a>
+      </div>
+      <div class="skills-grid" id="popularSkills">
+        <!-- 动态生成 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 内容区广告2 -->
+  <div class="ad-container content-ad" id="ad-content-2">
+    <div class="ad-placeholder">
+      <span>📢 内容区广告 - 300x600</span>
+    </div>
+  </div>
+
+  <!-- 最新添加 -->
+  <section class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">最新添加</h2>
+        <a href="/skills?sort=newest" class="view-all">查看全部 →</a>
+      </div>
+      <div class="skills-grid" id="newestSkills">
+        <!-- 动态生成 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 平台来源 -->
+  <section class="platforms-section">
+    <div class="container">
+      <h2 class="section-title">技能来源平台</h2>
+      <div class="platforms-grid" id="platformsGrid">
+        <!-- 动态生成 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 底部广告 -->
+  <div class="ad-container bottom-ad" id="ad-bottom">
+    <div class="ad-placeholder">
+      <span>📢 底部广告 - 728x90</span>
+    </div>
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">🦞</span>
+            <span class="logo-text">龙虾技能库</span>
+          </div>
+          <p class="footer-desc">全球最大的AI Agent技能聚合平台，让每个人都能找到合适的AI技能。</p>
+          <div class="social-links">
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Discord</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>导航</h4>
+          <a href="/">首页</a>
+          <a href="/skills">技能库</a>
+          <a href="/categories">分类</a>
+          <a href="/platforms">平台</a>
+        </div>
+        <div class="footer-links">
+          <h4>资源</h4>
+          <a href="/docs">使用文档</a>
+          <a href="/api">API接口</a>
+          <a href="/submit">提交技能</a>
+          <a href="/rss">RSS订阅</a>
+        </div>
+        <div class="footer-links">
+          <h4>关于</h4>
+          <a href="/about">关于我们</a>
+          <a href="/privacy">隐私政策</a>
+          <a href="/terms">服务条款</a>
+          <a href="/contact">联系我们</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 龙虾技能库 (Lobster Skills Hub). All rights reserved.</p>
+        <p class="disclaimer">
+          <span class="warning-icon">⚠️</span>
+          本站聚合的技能来自第三方，未经过独立安全验证，使用风险自负。
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="/js/app.js"></script>
+  
+  <!-- Monetag Ads Script (审核后启用) -->
+  <!-- <script src="//monetag.com/ads.js"></script> -->
+</body>
+</html>
