@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>技能详情 - 龙虾技能库</title>
+  <meta name="description" content="查看技能详细信息、下载和使用说明">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Monetag广告 -->
+  <script src="https://quge5.com/88/tag.min.js" data-zone="225658" async data-cfasync="false"></script>
+</head>
+<body>
+  <!-- 顶部广告位 -->
+  <div class="ad-container top-ad" id="ad-top">
+    <div class="ad-placeholder">📢 广告位 - 728x90</div>
+  </div>
+
+  <!-- 导航栏 -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="logo">
+          <span class="logo-icon">🦞</span>
+          <span class="logo-text">龙虾技能库</span>
+        </a>
+        <nav class="main-nav">
+          <a href="/" class="nav-link">首页</a>
+          <a href="/skills" class="nav-link">技能库</a>
+          <a href="/categories" class="nav-link">分类</a>
+          <a href="/platforms" class="nav-link">平台</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- 安全警告 -->
+  <div class="security-banner">
+    <div class="container">
+      <span class="security-icon">⚠️</span>
+      <p><strong>安全提示：</strong>本站技能来自第三方平台，未经过独立安全验证。使用前请自行评估风险。</p>
+    </div>
+  </div>
+
+  <!-- 技能详情内容 -->
+  <main class="skill-detail-page">
+    <div class="container">
+      <div class="detail-layout">
+        <!-- 左侧内容 -->
+        <div class="detail-main">
+          <div class="skill-header-detail">
+            <div class="skill-icon-large">📦</div>
+            <div class="skill-title-section">
+              <h1 id="skillName">加载中...</h1>
+              <div class="skill-meta">
+                <span class="platform-badge" id="skillPlatform">平台</span>
+                <span class="category-badge" id="skillCategory">分类</span>
+                <span class="verified-badge" id="skillVerified">未验证</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 内容区广告1 -->
+          <div class="ad-container content-ad" id="ad-content-1">
+            <div class="ad-placeholder">📢 广告位 - 728x90</div>
+          </div>
+
+          <div class="skill-section">
+            <h2>📋 技能介绍</h2>
+            <p id="skillDescription" class="skill-description">加载中...</p>
+          </div>
+
+          <div class="skill-section">
+            <h2>🏷️ 标签</h2>
+            <div class="skill-tags-detail" id="skillTags"></div>
+          </div>
+
+          <div class="skill-section">
+            <h2>📊 统计数据</h2>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-value" id="skillDownloads">0</div>
+                <div class="stat-label">下载次数</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value" id="skillRating">0.0</div>
+                <div class="stat-label">用户评分</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value" id="skillAuthor">-</div>
+                <div class="stat-label">作者</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 内容区广告2 -->
+          <div class="ad-container content-ad" id="ad-content-2">
+            <div class="ad-placeholder">📢 广告位 - 728x90</div>
+          </div>
+
+          <div class="skill-section">
+            <h2>⚠️ 安全警告</h2>
+            <div class="warning-box" id="skillWarning">
+              <p>此技能未经过本站独立安全验证。使用前请注意：</p>
+              <ul>
+                <li>建议在隔离环境中测试</li>
+                <li>仔细阅读技能说明和权限要求</li>
+                <li>不要授予不必要的权限</li>
+                <li>如有异常请立即停止使用</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="skill-section">
+            <h2>📖 使用说明</h2>
+            <div class="usage-steps">
+              <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h4>下载技能</h4>
+                  <p>点击下方下载按钮获取技能文件</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h4>安装配置</h4>
+                  <p>按照平台要求安装技能（OpenClaw/GitHub/Coze等）</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h4>开始使用</h4>
+                  <p>在对应平台激活并使用技能</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右侧边栏 -->
+        <aside class="detail-sidebar">
+          <!-- 侧边栏广告 -->
+          <div class="ad-container sidebar-ad" id="ad-sidebar">
+            <div class="ad-placeholder">📢 广告位 - 300x250</div>
+          </div>
+
+          <div class="download-card">
+            <h3>📥 下载技能</h3>
+            <button class="download-btn" id="downloadBtn" onclick="downloadSkill()">
+              <span class="btn-icon">⬇️</span>
+              <span class="btn-text">立即下载</span>
+            </button>
+            <p class="download-note">下载即表示同意服务条款</p>
+          </div>
+
+          <div class="platform-card-sidebar">
+            <h3>🚀 安装平台</h3>
+            <div class="platform-list" id="platformList">
+              <a href="#" class="platform-link">
+                <span class="platform-icon">🦞</span>
+                <span>OpenClaw</span>
+              </a>
+              <a href="#" class="platform-link">
+                <span class="platform-icon">🐙</span>
+                <span>GitHub</span>
+              </a>
+              <a href="#" class="platform-link">
+                <span class="platform-icon">🤖</span>
+                <span>扣子Coze</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="related-skills">
+            <h3>🔥 相关技能</h3>
+            <div class="related-list" id="relatedSkills"></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- 底部广告 -->
+  <div class="ad-container bottom-ad" id="ad-bottom">
+    <div class="ad-placeholder">📢 广告位 - 728x90</div>
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 龙虾技能库 - 全球最大的AI Agent技能聚合平台</p>
+    </div>
+  </footer>
+
+  <script src="/js/skill-detail.js"></script>
+</body>
+</html>
