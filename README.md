@@ -138,22 +138,6 @@ node scripts/fetch-skills.js
 }
 ```
 
-## 💰 广告配置
-
-### Monetag集成
-
-1. 注册 [Monetag](https://monetag.com) 账号
-2. 添加网站 `lobsterskills.com`
-3. 等待审核通过
-4. 获取广告代码
-5. 替换 `public/index.html` 中的广告占位符
-
-广告位已预留：
-- 顶部横幅 (728x90)
-- 侧边栏 (300x250)
-- 内容区 (728x90)
-- 底部横幅 (728x90)
-
 ## 🔍 SEO优化
 
 查看 [docs/seo-strategy.md](docs/seo-strategy.md) 了解详细的SEO策略。
