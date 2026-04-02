@@ -1238,3 +1238,241 @@ section {
     grid-template-columns: 1fr;
   }
 }
+
+/* ====================
+   平台页面样式
+   ==================== */
+
+.platforms-page,
+.categories-page {
+  padding: 2rem 0;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+}
+
+.page-desc {
+  text-align: center;
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
+
+.platform-card-large {
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.platform-card-large:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.platform-header {
+  padding: 1.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.platform-icon-large {
+  font-size: 2rem;
+}
+
+.platform-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.platform-body {
+  padding: 1.5rem;
+}
+
+.platform-desc {
+  color: var(--gray);
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.platform-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.platform-count {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.platform-arrow {
+  font-size: 1.25rem;
+  color: var(--gray);
+}
+
+/* ====================
+   分类页面样式
+   ==================== */
+
+.categories-grid-large {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.category-card-large {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+}
+
+.category-card-large:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.category-icon-large {
+  width: 60px;
+  height: 60px;
+  background: var(--gradient-lobster);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.category-info {
+  flex: 1;
+}
+
+.category-info h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--dark);
+}
+
+.category-desc {
+  font-size: 0.875rem;
+  color: var(--gray);
+  margin-bottom: 0.5rem;
+}
+
+.category-count {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* ====================
+   提交页面样式
+   ==================== */
+
+.submit-page {
+  padding: 2rem 0;
+}
+
+.submit-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.submit-form-wrapper {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  margin: 2rem 0;
+}
+
+.submit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid var(--gray-light);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.form-notice {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+.form-notice p {
+  color: #856404;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-notice ul {
+  margin-left: 1.25rem;
+  color: #856404;
+  font-size: 0.875rem;
+}
+
+.form-notice li {
+  margin-bottom: 0.25rem;
+}
+
+.submit-btn {
+  padding: 1rem;
+  background: var(--gradient-lobster);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}

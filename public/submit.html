@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>提交技能 - 龙虾技能库</title>
+  <meta name="description" content="提交你的AI技能到龙虾技能库，让更多人发现和使用">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 顶部广告位 -->
+  <div class="ad-container top-ad" id="ad-top">
+    <div class="ad-placeholder">📢 广告位 - 728x90</div>
+  </div>
+
+  <!-- 导航栏 -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="logo">
+          <span class="logo-icon">🦞</span>
+          <span class="logo-text">龙虾技能库</span>
+        </a>
+        <nav class="main-nav">
+          <a href="/" class="nav-link">首页</a>
+          <a href="/skills" class="nav-link">技能库</a>
+          <a href="/categories" class="nav-link">分类</a>
+          <a href="/platforms" class="nav-link">平台</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- 页面内容 -->
+  <main class="submit-page">
+    <div class="container">
+      <div class="submit-container">
+        <h1 class="page-title">提交技能</h1>
+        <p class="page-desc">分享你的AI技能，帮助更多人提升效率</p>
+
+        <!-- 内容区广告 -->
+        <div class="ad-container content-ad" id="ad-content-1">
+          <div class="ad-placeholder">📢 广告位 - 728x90</div>
+        </div>
+
+        <div class="submit-form-wrapper">
+          <form class="submit-form" id="submitForm">
+            <div class="form-group">
+              <label for="skillName">技能名称 *</label>
+              <input type="text" id="skillName" name="skillName" placeholder="例如：PDF批量处理器" required>
+            </div>
+
+            <div class="form-group">
+              <label for="skillPlatform">所属平台 *</label>
+              <select id="skillPlatform" name="skillPlatform" required>
+                <option value="">请选择平台</option>
+                <option value="openclaw">OpenClaw</option>
+                <option value="github">GitHub</option>
+                <option value="coze">扣子Coze</option>
+                <option value="dify">Dify</option>
+                <option value="langchain">LangChain</option>
+                <option value="other">其他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="skillCategory">技能分类 *</label>
+              <select id="skillCategory" name="skillCategory" required>
+                <option value="">请选择分类</option>
+                <option value="productivity">效率工具</option>
+                <option value="writing">写作辅助</option>
+                <option value="coding">编程开发</option>
+                <option value="design">设计创意</option>
+                <option value="data">数据分析</option>
+                <option value="marketing">营销推广</option>
+                <option value="automation">自动化</option>
+                <option value="other">其他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="skillDescription">技能描述 *</label>
+              <textarea id="skillDescription" name="skillDescription" rows="4" placeholder="请简要描述技能的功能和用途..." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="skillUrl">技能链接 *</label>
+              <input type="url" id="skillUrl" name="skillUrl" placeholder="https://github.com/username/repo" required>
+            </div>
+
+            <div class="form-group">
+              <label for="authorName">作者名称</label>
+              <input type="text" id="authorName" name="authorName" placeholder="你的昵称">
+            </div>
+
+            <div class="form-group">
+              <label for="authorEmail">联系邮箱</label>
+              <input type="email" id="authorEmail" name="authorEmail" placeholder="your@email.com">
+            </div>
+
+            <div class="form-notice">
+              <p>⚠️ 提交前请确认：</p>
+              <ul>
+                <li>技能链接可正常访问</li>
+                <li>技能描述真实准确</li>
+                <li>不提交恶意或违法内容</li>
+              </ul>
+            </div>
+
+            <button type="submit" class="submit-btn">提交技能</button>
+          </form>
+        </div>
+
+        <!-- 底部广告 -->
+        <div class="ad-container bottom-ad" id="ad-bottom">
+          <div class="ad-placeholder">📢 广告位 - 728x90</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 龙虾技能库 - 全球最大的AI Agent技能聚合平台</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('submitForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('感谢提交！我们会在审核后上架你的技能。');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
