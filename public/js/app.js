@@ -212,7 +212,7 @@ const UIRenderer = {
     const verifiedIcon = skill.verified ? '✅' : '';
 
     return `
-      <div class="skill-card">
+      <div class="skill-card" onclick="window.location.href='/skill-detail.html?id=${skill.id}'" style="cursor: pointer;">
         <div class="skill-header">
           <h3 class="skill-title">
             ${skill.name}
